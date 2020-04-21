@@ -1,6 +1,6 @@
 ## Personagens Marvel
 
-[](images/PersonagensMarvelClean.gif)
+
 
 Personagens Marvel é uma aplicação que consome os dados da [API da Marvel Comics Book](https://developer.marvel.com) apresentando seus personagens, permitindo que o usuário visualize  detalhes e os HQs mais caros. 
 
