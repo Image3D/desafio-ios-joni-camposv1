@@ -47,7 +47,9 @@ Foi utilizado o Clean Swift Xcode Template para facilitar a criação da arquite
 
 As chamadas à API da Marvel foram testadas no [PostMan](https://www.postman.com/) antes de implementarmos os serviços no projeto.
 
+## Dark Mode 
 
+Implementamos também o Dark Mode para o Aplicativo.
 
 
 
