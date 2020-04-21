@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C1055AE244F1F2A00530D3A /* desafio_ios_joni_camposTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40452024475C4D002AD44B /* desafio_ios_joni_camposTests.swift */; };
 		9C1D558C244E0A2100ED3F16 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D558B244E0A2100ED3F16 /* Services.swift */; };
 		9C40450A24475C4B002AD44B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40450924475C4B002AD44B /* AppDelegate.swift */; };
 		9C40450C24475C4B002AD44B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40450B24475C4B002AD44B /* SceneDelegate.swift */; };
 		9C40451324475C4D002AD44B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C40451224475C4D002AD44B /* Assets.xcassets */; };
 		9C40451624475C4D002AD44B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C40451424475C4D002AD44B /* LaunchScreen.storyboard */; };
-		9C40452124475C4D002AD44B /* desafio_ios_joni_camposTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40452024475C4D002AD44B /* desafio_ios_joni_camposTests.swift */; };
 		9C40452C24475C4D002AD44B /* desafio_ios_joni_camposUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40452B24475C4D002AD44B /* desafio_ios_joni_camposUITests.swift */; };
 		9C40454424475DC1002AD44B /* ListCharactersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40453E24475DC1002AD44B /* ListCharactersPresenter.swift */; };
 		9C40454524475DC1002AD44B /* ListCharactersWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40453F24475DC1002AD44B /* ListCharactersWorker.swift */; };
@@ -405,7 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C40452124475C4D002AD44B /* desafio_ios_joni_camposTests.swift in Sources */,
+				9C1055AE244F1F2A00530D3A /* desafio_ios_joni_camposTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
