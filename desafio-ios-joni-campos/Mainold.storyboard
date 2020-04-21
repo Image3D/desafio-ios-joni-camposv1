@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Personagens Marvel-->
+        <scene sceneID="8gZ-QC-buE">
+            <objects>
+                <tableViewController id="Cv5-NU-iXm" customClass="ListCharactersViewController" customModule="desafio_ios_joni_campos" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="4Iu-nO-3ez">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CharacterItem" rowHeight="170" translatesAutoresizingMaskIntoConstraints="NO" id="Ufj-Sg-DuY">
+                                <rect key="frame" x="0.0" y="28" width="414" height="170"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ufj-Sg-DuY" id="0hP-hN-55z">
+                                    <rect key="frame" x="0.0" y="0.0" width="382.5" height="170"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="xmen" translatesAutoresizingMaskIntoConstraints="NO" id="ZU0-O0-ZiY">
+                                            <rect key="frame" x="20" y="-64" width="169" height="298"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="169" id="u1b-3Z-kIg"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joni" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7u-Uc-VgE">
+                                            <rect key="frame" x="225.5" y="74" width="149.5" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="96" id="vSn-Wc-pbo"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Y7u-Uc-VgE" firstAttribute="centerY" secondItem="ZU0-O0-ZiY" secondAttribute="centerY" id="2Z5-uY-1VT"/>
+                                        <constraint firstAttribute="trailing" secondItem="Y7u-Uc-VgE" secondAttribute="trailing" constant="7.5" id="5ch-t9-Qje"/>
+                                        <constraint firstItem="Y7u-Uc-VgE" firstAttribute="leading" secondItem="0hP-hN-55z" secondAttribute="leading" constant="225.5" id="XCh-aZ-cYQ"/>
+                                        <constraint firstItem="Y7u-Uc-VgE" firstAttribute="centerY" secondItem="0hP-hN-55z" secondAttribute="centerY" id="rVT-hu-tcf"/>
+                                        <constraint firstItem="Y7u-Uc-VgE" firstAttribute="top" secondItem="0hP-hN-55z" secondAttribute="topMargin" constant="63" id="x0P-RW-Cyj"/>
+                                        <constraint firstItem="Y7u-Uc-VgE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZU0-O0-ZiY" secondAttribute="trailing" constant="8" symbolic="YES" id="yUD-LJ-7og"/>
+                                        <constraint firstItem="ZU0-O0-ZiY" firstAttribute="leading" secondItem="0hP-hN-55z" secondAttribute="leadingMargin" id="yh2-EO-wZa"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Cv5-NU-iXm" id="Eyw-F7-UFE"/>
+                            <outlet property="delegate" destination="Cv5-NU-iXm" id="JSk-cP-nVZ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Personagens Marvel" largeTitleDisplayMode="always" id="kNf-5J-n0F"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9sA-rn-snn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="473.91304347826093" y="-206.25"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Pdo-XP-1E0">
+            <objects>
+                <navigationController id="WYL-Oa-g3X" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l2S-yl-C7v">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Cv5-NU-iXm" kind="relationship" relationship="rootViewController" id="xNy-y5-DVl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lij-um-iF8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-371" y="-206"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xmen" width="407.5" height="297.5"/>
+    </resources>
+</document>
