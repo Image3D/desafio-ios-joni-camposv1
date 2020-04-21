@@ -51,7 +51,7 @@ As chamadas à API da Marvel foram testadas no [PostMan](https://www.postman.com
 
 Implementamos também o Dark Mode para o Aplicativo.
 
-
+[](images/DarkMode.png)
 
 > Written with [StackEdit](https://stackedit.io/).
 
