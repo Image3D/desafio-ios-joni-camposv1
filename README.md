@@ -51,9 +51,7 @@ Todos os serviços foram feitos com as bibliotecas nativas do iOS.
 
 ## Dark Mode 
 
-Implementamos também o Dark Mode para o Aplicativo.
-
-![](images/LightDarkMode.png) 
+Também foi implementado o Dark Mode para o Aplicativo.
 
 ## O Swift Package Manager
 
