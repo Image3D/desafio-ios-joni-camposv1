@@ -22,38 +22,41 @@ protocol ListCharactersDisplayLogic: class
 
 class ListCharactersViewController: UITableViewController, ListCharactersDisplayLogic
 {
-  var interactor: ListCharactersBusinessLogic?
-  var router: (NSObjectProtocol & ListCharactersRoutingLogic & ListCharactersDataPassing)?
-
-  // MARK: Object lifecycle
-  
-  override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
-  {
-    super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    setup()
-  }
-  
-  required init?(coder aDecoder: NSCoder)
-  {
-    super.init(coder: aDecoder)
-    setup()
-  }
-  
-  // MARK: Setup
-  
-  private func setup()
-  {
-    let viewController = self
-    let interactor = ListCharactersInteractor()
-    let presenter = ListCharactersPresenter()
-    let router = ListCharactersRouter()
-    viewController.interactor = interactor
-    viewController.router = router
-    interactor.presenter = presenter
-    presenter.viewController = viewController
-    router.viewController = viewController
-    router.dataStore = interactor
-  }
+    
+    @IBOutlet weak var tblList: UITableView!
+    
+    var interactor: ListCharactersBusinessLogic?
+    var router: (NSObjectProtocol & ListCharactersRoutingLogic & ListCharactersDataPassing)?
+    
+    // MARK: Object lifecycle
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
+    {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        setup()
+    }
+    
+    required init?(coder aDecoder: NSCoder)
+    {
+        super.init(coder: aDecoder)
+        setup()
+    }
+    
+    // MARK: Setup
+    
+    private func setup()
+    {
+        let viewController = self
+        let interactor = ListCharactersInteractor()
+        let presenter = ListCharactersPresenter()
+        let router = ListCharactersRouter()
+        viewController.interactor = interactor
+        viewController.router = router
+        interactor.presenter = presenter
+        presenter.viewController = viewController
+        router.viewController = viewController
+        router.dataStore = interactor
+    }
   
   //MARK: - Routing
   
@@ -74,6 +77,10 @@ class ListCharactersViewController: UITableViewController, ListCharactersDisplay
   override func viewDidLoad()
   {
     super.viewDidLoad()
+    
+    tblList.dataSource = self
+    tblList.delegate = self
+    tblList.tableFooterView = UIView(frame: .zero)
     doSomething()
   }
   
@@ -136,9 +143,6 @@ class ListCharactersViewController: UITableViewController, ListCharactersDisplay
     }
          
      
-     
-    
-     
     //MARK: -  Define a quantidade de sessões da nossa tabela
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -158,7 +162,6 @@ class ListCharactersViewController: UITableViewController, ListCharactersDisplay
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-       
         
         let personagens = oComics
         
@@ -189,8 +192,26 @@ class ListCharactersViewController: UITableViewController, ListCharactersDisplay
         
     }
     
+    
+    //MARK: - load next page
+    
+  
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row ==   (oComics?.data?.count ?? 0) - 1 {
+            interactor?.proximaPagina()
+        }
+    }
+    
+
+    
+    
+    
+    
+    
+    
+    
      
-        
+     //MARK: - Routing
      
      // Chama a tela do detalhe passando o indexPath selecionado, isto é a linha que foi selecionado na TableView
       // Utilizado para passar dados de um ViewController para outro
@@ -204,15 +225,10 @@ class ListCharactersViewController: UITableViewController, ListCharactersDisplay
              //pega o indexPath Selecionado
              if let indexPath = tableView.indexPathForSelectedRow {
                  
-                 
                  let personagens = oComics
                  
                  //pegua os dados do array de um registro
                  let personagemLinha = personagens?.data?.characters![indexPath.row]
-                 
-                 
-                 
-                 //let persongemSelecionado = self.filmes[indexPath.row]
                  
                  
                  //chama a tela do detalhe passando o filmeSelecionado

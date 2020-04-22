@@ -11,10 +11,15 @@
 //
 
 import UIKit
+//page counter
+   var page = 0
+   
+
 
 protocol ListCharactersBusinessLogic
 {
-  func doSomething(request: ListCharacters.Something.Request)
+    func doSomething(request: ListCharacters.Something.Request)
+    func proximaPagina()
 }
 
 protocol ListCharactersDataStore
@@ -24,6 +29,8 @@ protocol ListCharactersDataStore
 
 class ListCharactersInteractor: ListCharactersBusinessLogic, ListCharactersDataStore
 {
+    
+   
     var presenter: ListCharactersPresentationLogic?
     var worker: ListCharactersWorker?
     //var name: String = ""
@@ -36,7 +43,11 @@ class ListCharactersInteractor: ListCharactersBusinessLogic, ListCharactersDataS
         //    worker?.doSomeWork()
         
         // call API da Marvel
-        Services.callAPIMarvelCharacters{ (result) in
+        
+    let offset = 0
+        
+        
+        Services.callAPIMarvelCharacters(offset: offset){ (result) in
             
             oComics = result
             
@@ -47,4 +58,25 @@ class ListCharactersInteractor: ListCharactersBusinessLogic, ListCharactersDataS
         
         
     }
+    
+    
+    func proximaPagina() {
+        page += 1
+        let offset = page * 20
+        
+        
+         Services.callAPIMarvelCharacters(offset: offset){ (result) in
+                  
+                  oComics = result
+                  
+                  let response = ListCharacters.Something.Response(resultado: result)
+                  self.presenter?.presentSomething(response: response)
+                  
+              }
+    }
+    
+    
+    
+    
+    
 }
