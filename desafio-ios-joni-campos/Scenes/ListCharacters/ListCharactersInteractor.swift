@@ -24,27 +24,27 @@ protocol ListCharactersDataStore
 
 class ListCharactersInteractor: ListCharactersBusinessLogic, ListCharactersDataStore
 {
-  var presenter: ListCharactersPresentationLogic?
-  var worker: ListCharactersWorker?
-  //var name: String = ""
-  
-  // MARK: Do something
-  
-  func doSomething(request: ListCharacters.Something.Request)
-  {
-//    worker = ListCharactersWorker()
-//    worker?.doSomeWork()
+    var presenter: ListCharactersPresentationLogic?
+    var worker: ListCharactersWorker?
+    //var name: String = ""
     
-    // call API da Marvel
-   Services.callAPIMarvelCharacters{ (result) in
+    // MARK: Do something
+    
+    func doSomething(request: ListCharacters.Something.Request)
+    {
+        //    worker = ListCharactersWorker()
+        //    worker?.doSomeWork()
         
-        oComics = result
-    
-    let response = ListCharacters.Something.Response(resultado: result)
-    self.presenter?.presentSomething(response: response)
-    
+        // call API da Marvel
+        Services.callAPIMarvelCharacters{ (result) in
+            
+            oComics = result
+            
+            let response = ListCharacters.Something.Response(resultado: result)
+            self.presenter?.presentSomething(response: response)
+            
+        }
+        
+        
     }
-    
-    
-  }
 }

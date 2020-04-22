@@ -95,16 +95,9 @@ class CharacterExpensiveComicViewController: UIViewController, CharacterExpensiv
   func displaySomething(viewModel: CharacterExpensiveComic.Something.ViewModel)
   {
     
-   let personagemID =  selectedPersonagemID
-    
-    
-    let price = viewModel.oExpensive.resultado.data?.results?[0].prices?[0]
-    //nameTextField.text = viewModel.name
-    
+
     let results = (viewModel.oExpensive.resultado.data?.results)!
     let mostExpensiveComic = getExpensiveComic(results: results)
-    
-    
     
     let mostExpensiveComicPrice = mostExpensiveComic.prices![0].price
     
@@ -119,8 +112,6 @@ class CharacterExpensiveComicViewController: UIViewController, CharacterExpensiv
     
     
     let mostExpensiveComicImagePath = (mostExpensiveComic.thumbnail?.path ?? "") + "." + (mostExpensiveComic.thumbnail?.thumbnailExtension ?? "")
-    
-    
     
     
     

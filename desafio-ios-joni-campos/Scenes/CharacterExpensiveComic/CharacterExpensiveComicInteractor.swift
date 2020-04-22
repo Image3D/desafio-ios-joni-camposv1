@@ -14,37 +14,37 @@ import UIKit
 
 protocol CharacterExpensiveComicBusinessLogic
 {
-  func doSomething(request: CharacterExpensiveComic.Something.Request)
+    func doSomething(request: CharacterExpensiveComic.Something.Request)
 }
 
 protocol CharacterExpensiveComicDataStore
 {
-  //var name: String { get set }
+    //var name: String { get set }
 }
 
 class CharacterExpensiveComicInteractor: CharacterExpensiveComicBusinessLogic, CharacterExpensiveComicDataStore
 {
-  var presenter: CharacterExpensiveComicPresentationLogic?
-  var worker: CharacterExpensiveComicWorker?
-  //var name: String = ""
-  
-  // MARK: Do something
-  
-  func doSomething(request: CharacterExpensiveComic.Something.Request)
-  {
-//    worker = CharacterExpensiveComicWorker()
-//    worker?.doSomeWork()
+    var presenter: CharacterExpensiveComicPresentationLogic?
+    var worker: CharacterExpensiveComicWorker?
+    //var name: String = ""
     
-    Services.callAPIMarvelCharactersID{ (result) in
-          
-          oExpensive = result
-      
-        let response = CharacterExpensiveComic.Something.Response(resultado: result)
-        self.presenter?.presentSomething(response: response)
-      
-      }
+    // MARK: Do something
     
-    
-    
-  }
+    func doSomething(request: CharacterExpensiveComic.Something.Request)
+    {
+        //    worker = CharacterExpensiveComicWorker()
+        //    worker?.doSomeWork()
+        
+        Services.callAPIMarvelCharactersID{ (result) in
+            
+            oExpensive = result
+            
+            let response = CharacterExpensiveComic.Something.Response(resultado: result)
+            self.presenter?.presentSomething(response: response)
+            
+        }
+        
+        
+        
+    }
 }

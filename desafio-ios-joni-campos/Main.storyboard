@@ -134,7 +134,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yBT-8L-fmc"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Sid-6v-b8Y"/>
+                    <navigationItem key="navigationItem" id="Sid-6v-b8Y">
+                        <barButtonItem key="backBarButtonItem" title="Voltar" id="O5c-k6-05F"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="descricaoPersonagem" destination="dS8-yC-hgz" id="470-sR-owW"/>
                         <outlet property="imagemPersonagem" destination="wOI-n6-75F" id="WXb-Ll-gQd"/>
@@ -145,7 +147,7 @@
             </objects>
             <point key="canvasLocation" x="2855.1999999999998" y="144.3778110944528"/>
         </scene>
-        <!--Character Expensive Comic View Controller-->
+        <!--HQ mais Cara-->
         <scene sceneID="I8c-0v-zd5">
             <objects>
                 <viewController id="VcX-Cy-8XH" customClass="CharacterExpensiveComicViewController" customModule="desafio_ios_joni_campos" customModuleProvider="target" sceneMemberID="viewController">
@@ -198,7 +200,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OlR-uo-6QM"/>
                     </view>
-                    <navigationItem key="navigationItem" id="zeJ-KE-KJ1"/>
+                    <navigationItem key="navigationItem" title="HQ mais Cara" largeTitleDisplayMode="always" id="zeJ-KE-KJ1">
+                        <barButtonItem key="backBarButtonItem" title="Voltar" id="Xmc-gL-ty7"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="expensiveDescription" destination="P6d-y6-zvy" id="FJw-vv-tUO"/>
                         <outlet property="expensiveImage" destination="8bM-F3-bOZ" id="blr-8p-QcQ"/>

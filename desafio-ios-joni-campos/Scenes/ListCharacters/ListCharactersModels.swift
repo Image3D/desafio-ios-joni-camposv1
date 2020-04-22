@@ -35,12 +35,7 @@ enum ListCharacters
 import Foundation
 import UIKit
 
-//MARK: -
 
-struct MyCharacters {
-    //static var pedidosWix = [Pedidos]()
-  // static var listCharacters = CharacterDataWrapper()
-}
 
 // MARK: - Character
 struct CharacterDataWrapper: Decodable{
@@ -154,79 +149,3 @@ struct StoriesItem: Decodable {
 }
 
 
-
-
-
-
-
-
-//MARK: - lista de pedidos
-
-struct WebSiteDescription:Decodable{
-    let name: String
-    let description: String
-    let courses: [Course]
-}
-
-
-struct Course: Decodable{
-    let id: Int
-    let name: String
-    let link: String
-    let imageUrl: String
-}
-
-struct PedidosWix:Decodable{
-    let pedidos: [Pedidos]
-}
-
-
-struct MyVariables {
-    //static var pedidosWix = [Pedidos]()
-    static var pedidosWix = [Pedidos]()
-}
-
-// para testar os pedidos do WIx lista todos os pedidos
-struct Pedidos:Decodable{
-    let _id :String?
-    let codigoProduto:String?
-    let statusIntegracao:String?
-    let nomeCliente:String?
-    let pedidoDate:String?
-    let statusPagamento:String?
-    let statusPedido:String?
-    let resultadoPagamento:String?
-    let amount:String?
-    let currency:String?
-    let pagamento_ID:String?
-    let categoria:String?
-    let produt_ID:String?
-    let precoProduto:String?
-    let quantidadeProduto:String?
-    let paisComprador:String?
-    let emailComprador:String?
-    let nomeComprador:String?
-    let sobreNomeComprador:String?
-    let telefoneComprador:String?
-    let nomeProduto:String?
-    let statusProcessamento:String?
-    let enderecoEntrega:String?
-    let complementoEntrega:String?
-    let cidadeEntrega:String?
-    let estadoEntrega:String?
-    let cpfcnpjEntrega:String?
-    let cepEntrega:String?
-    let telefoneEntrega:String?
-    let dataPrevisaoEntrega:String?
-    let statusPedidoCliente:String?
-    let dataEntregacliente:String?
-    let transportadorPedidoID:String?
-    let dataLiberacaoConteudo:String?
-    let responsavelProducao:String?
-    let flagEmailLiberacao:String?
-    let origemPedido:String?
-    let pedido_ID:String?
-    
-    
-    
-}

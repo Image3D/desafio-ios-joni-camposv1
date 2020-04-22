@@ -35,8 +35,6 @@ enum CharacterExpensiveComic
 }
 
 
-
-
 // MARK: - Comics
 struct CharacterComics: Decodable{
     let code: Int?

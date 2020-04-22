@@ -14,18 +14,18 @@ import UIKit
 
 protocol CharacterDetailsPresentationLogic
 {
-  func presentSomething(response: CharacterDetails.Something.Response)
+    func presentSomething(response: CharacterDetails.Something.Response)
 }
 
 class CharacterDetailsPresenter: CharacterDetailsPresentationLogic
 {
-  weak var viewController: CharacterDetailsDisplayLogic?
-  
-  // MARK: Do something
-  
-  func presentSomething(response: CharacterDetails.Something.Response)
-  {
-    let viewModel = CharacterDetails.Something.ViewModel()
-    viewController?.displaySomething(viewModel: viewModel)
-  }
+    weak var viewController: CharacterDetailsDisplayLogic?
+    
+    // MARK: Do something
+    
+    func presentSomething(response: CharacterDetails.Something.Response)
+    {
+        let viewModel = CharacterDetails.Something.ViewModel()
+        viewController?.displaySomething(viewModel: viewModel)
+    }
 }

@@ -14,18 +14,18 @@ import UIKit
 
 protocol CharacterExpensiveComicPresentationLogic
 {
-  func presentSomething(response: CharacterExpensiveComic.Something.Response)
+    func presentSomething(response: CharacterExpensiveComic.Something.Response)
 }
 
 class CharacterExpensiveComicPresenter: CharacterExpensiveComicPresentationLogic
 {
-  weak var viewController: CharacterExpensiveComicDisplayLogic?
-  
-  // MARK: Do something
-  
-  func presentSomething(response: CharacterExpensiveComic.Something.Response)
-  {
-    let viewModel = CharacterExpensiveComic.Something.ViewModel(oExpensive: response)
-    viewController?.displaySomething(viewModel: viewModel)
-  }
+    weak var viewController: CharacterExpensiveComicDisplayLogic?
+    
+    // MARK: Do something
+    
+    func presentSomething(response: CharacterExpensiveComic.Something.Response)
+    {
+        let viewModel = CharacterExpensiveComic.Something.ViewModel(oExpensive: response)
+        viewController?.displaySomething(viewModel: viewModel)
+    }
 }

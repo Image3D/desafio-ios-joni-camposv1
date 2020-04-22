@@ -77,10 +77,9 @@ class ListCharactersViewController: UITableViewController, ListCharactersDisplay
     doSomething()
   }
   
-  // MARK: Do something
+  // MARK: - Do something
     
-  
-  //@IBOutlet weak var nameTextField: UITextField!
+ 
   
   func doSomething()
   {
@@ -104,7 +103,7 @@ class ListCharactersViewController: UITableViewController, ListCharactersDisplay
             oComics  = viewModel.oCharacters.resultado
             
             self.tableView.reloadData()
-            //self.tableView.isHidden = false;
+            
         }
         
     }else{
@@ -151,7 +150,7 @@ class ListCharactersViewController: UITableViewController, ListCharactersDisplay
         let contagem = oComics?.data?.count ?? 0
         
         return (contagem)
-        //return MyVariables.pedidosWix.count
+      
     }
      
      

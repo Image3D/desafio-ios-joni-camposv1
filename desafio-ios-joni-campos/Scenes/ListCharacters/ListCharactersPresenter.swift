@@ -14,18 +14,18 @@ import UIKit
 
 protocol ListCharactersPresentationLogic
 {
-  func presentSomething(response: ListCharacters.Something.Response)
+    func presentSomething(response: ListCharacters.Something.Response)
 }
 
 class ListCharactersPresenter: ListCharactersPresentationLogic
 {
-  weak var viewController: ListCharactersDisplayLogic?
-  
-  // MARK: Do something
-  
-  func presentSomething(response: ListCharacters.Something.Response)
-  {
-    let viewModel = ListCharacters.Something.ViewModel(oCharacters: response)
-    viewController?.displaySomething(viewModel: viewModel)
-  }
+    weak var viewController: ListCharactersDisplayLogic?
+    
+    // MARK: Do something
+    
+    func presentSomething(response: ListCharacters.Something.Response)
+    {
+        let viewModel = ListCharacters.Something.ViewModel(oCharacters: response)
+        viewController?.displaySomething(viewModel: viewModel)
+    }
 }
