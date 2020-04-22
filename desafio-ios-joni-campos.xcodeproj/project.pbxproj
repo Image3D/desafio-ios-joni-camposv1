@@ -57,7 +57,7 @@
 
 /* Begin PBXFileReference section */
 		9C1D558B244E0A2100ED3F16 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
-		9C40450624475C4B002AD44B /* desafio-ios-joni-campos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafio-ios-joni-campos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C40450624475C4B002AD44B /* Personagens Marvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Personagens Marvel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C40450924475C4B002AD44B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C40450B24475C4B002AD44B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9C40451224475C4D002AD44B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 		9C40450724475C4B002AD44B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C40450624475C4B002AD44B /* desafio-ios-joni-campos.app */,
+				9C40450624475C4B002AD44B /* Personagens Marvel.app */,
 				9C40451C24475C4D002AD44B /* desafio-ios-joni-camposTests.xctest */,
 				9C40452724475C4D002AD44B /* desafio-ios-joni-camposUITests.xctest */,
 			);
@@ -258,7 +258,7 @@
 				9CC81EC8244DF8F400362BDD /* Kingfisher */,
 			);
 			productName = "desafio-ios-joni-campos";
-			productReference = 9C40450624475C4B002AD44B /* desafio-ios-joni-campos.app */;
+			productReference = 9C40450624475C4B002AD44B /* Personagens Marvel.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9C40451B24475C4D002AD44B /* desafio-ios-joni-camposTests */ = {
@@ -570,8 +570,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.image3d.desafio-ios-joni-campos";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.desafio-ios-joni-campos.PersonagensMarvel";
+				PRODUCT_NAME = "Personagens Marvel";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -589,8 +589,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.image3d.desafio-ios-joni-campos";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.desafio-ios-joni-campos.PersonagensMarvel";
+				PRODUCT_NAME = "Personagens Marvel";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
