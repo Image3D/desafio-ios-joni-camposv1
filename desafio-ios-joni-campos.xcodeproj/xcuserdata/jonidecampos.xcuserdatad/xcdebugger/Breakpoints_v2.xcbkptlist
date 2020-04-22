@@ -16,8 +16,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
             endingLineNumber = "30"
-            landmarkName = "ListCharactersViewController"
-            landmarkType = "3">
+            landmarkName = "init(nibName:bundle:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "5BD4E853-AE13-466C-A869-4868B0B81E04 - ac7f23af71927598"

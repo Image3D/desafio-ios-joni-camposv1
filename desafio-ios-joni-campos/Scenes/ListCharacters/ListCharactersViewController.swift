@@ -15,12 +15,6 @@ import Foundation
 import Kingfisher
 
 
-
-
-
-
-
-
 protocol ListCharactersDisplayLogic: class
 {
   func displaySomething(viewModel: ListCharacters.Something.ViewModel)
@@ -130,79 +124,72 @@ class ListCharactersViewController: UITableViewController, ListCharactersDisplay
     
     
     
-         //MARK: - Mostra mensagem de erro
-         // Para exibir alertas na tela
-         func exibirMensagem(titulo: String, mensagem: String)
-         {
-             let alerta = UIAlertController(title: titulo, message: mensagem, preferredStyle: .alert)
-             let cancelar = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
-             
-             alerta.addAction(cancelar)
-             
-             present(alerta, animated: true, completion: nil)
-         }
+    //MARK: - Mostra mensagem de erro
+    // Para exibir alertas na tela
+    func exibirMensagem(titulo: String, mensagem: String)
+    {
+        let alerta = UIAlertController(title: titulo, message: mensagem, preferredStyle: .alert)
+        let cancelar = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
+        
+        alerta.addAction(cancelar)
+        
+        present(alerta, animated: true, completion: nil)
+    }
          
      
      
     
      
-     //MARK: -  Define a quantidade de sessões da nossa tabela
-     override func numberOfSections(in tableView: UITableView) -> Int {
-         return 1
-     }
-     
-     // Retorna o numero de linhas da sessão
-     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-         
+    //MARK: -  Define a quantidade de sessões da nossa tabela
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    // Retorna o numero de linhas da sessão
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         let contagem = oComics?.data?.count ?? 0
-         
-         return (contagem)
-         //return MyVariables.pedidosWix.count
-     }
+        
+        return (contagem)
+        //return MyVariables.pedidosWix.count
+    }
      
      
-     //MARK: - Execute o TableView
-     // Loop para preencher as células do TableView
-     // Função que configura a celula, onde deve-se atribuir as variaveis
-     // Para cada linha atribui-se o valor dos dados do class Filme
-     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
-     {
-         // instancie o Array
-         
-      
-         let personagens = oComics
-         
-         //pegua os dados do array de um registro
-         let personagemLinha = personagens?.data?.characters![indexPath.row]
-         
-         //crie uma variavel com o identificador da celula
-         let celulaID = "celulaID"
-         
-         //executa o loop da Table View para a celula = celulaID
-         let celula = tableView.dequeueReusableCell(withIdentifier: celulaID, for: indexPath) as! celula
-         
-         
-         celula.nomeCiente.text = personagemLinha?.name
-         
-         let imagePath = (personagemLinha?.thumbnail?.path ?? "") + "." + (personagemLinha?.thumbnail?.thumbnailExtension ?? "")
-         
-         
-         // using Kingfisher
-         let url = URL(string: imagePath)
-         
-         //let url = URL(string: "https://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16.jpg")
-         // this downloads the image asynchronously if it's not cached yet
-         
-         //celula.characterImage.kf.setImage(with: url)
-         let processor = RoundCornerImageProcessor(cornerRadius: 100)
-         celula.characterImage.kf.indicatorType = .activity
-         celula.characterImage.kf.setImage(with: url, options: [.processor(processor)])
-         
-         
-         return celula
-         
-     }
-     
+    //MARK: - Execute o TableView
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+       
+        
+        let personagens = oComics
+        
+        //pegua os dados do array de um registro
+        let personagemLinha = personagens?.data?.characters![indexPath.row]
+        
+        //crie uma variavel com o identificador da celula
+        let celulaID = "celulaID"
+        
+        //executa o loop da Table View para a celula = celulaID
+        let celula = tableView.dequeueReusableCell(withIdentifier: celulaID, for: indexPath) as! celula
+        
+        
+        celula.nomeCiente.text = personagemLinha?.name
+        
+        let imagePath = (personagemLinha?.thumbnail?.path ?? "") + "." + (personagemLinha?.thumbnail?.thumbnailExtension ?? "")
+        
+        
+        let url = URL(string: imagePath)
+        
+        // using Kingfisher
+        let processor = RoundCornerImageProcessor(cornerRadius: 100)
+        celula.characterImage.kf.indicatorType = .activity
+        celula.characterImage.kf.setImage(with: url, options: [.processor(processor)])
+        
+        
+        return celula
+        
+    }
+    
      
         
      
