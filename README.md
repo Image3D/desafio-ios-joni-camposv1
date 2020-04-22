@@ -1,7 +1,6 @@
 ## Personagens Marvel
 
 
-
 Personagens Marvel é uma aplicação que consome os dados da [API da Marvel Comics Book](https://developer.marvel.com) apresentando seus personagens, permitindo que o usuário visualize  detalhes e os HQs mais caros. 
 
 ## **Atividades do Projeto**
@@ -47,11 +46,27 @@ Foi utilizado o Clean Swift Xcode Template para facilitar a criação da arquite
 
 As chamadas à API da Marvel foram testadas no [PostMan](https://www.postman.com/) antes de implementarmos os serviços no projeto.
 
+Todos os serviços foram feitos com as bibliotecas nativas do iOS.
+
+
 ## Dark Mode 
 
 Implementamos também o Dark Mode para o Aplicativo.
 
 ![](images/LightDarkMode.png)
 
-> Written with [StackEdit](https://stackedit.io/).
+
+## O Swift Package Manager
+
+O novo SPM está integrado no XCode e foi utilizado como o Dependency Manager em vez de outros gerenciadores ( CocoaPos, por exemplo) para instalar a biblioteca [Kingfisher](https://github.com/onevcat/Kingfisher) para fazer o download e manipular imagens da Web.
+
+Não é necessário fazer nenhuma instalação de Pods. Nenhum outra biblioteca ou pacote foi instalada.
+
+
+## Xcode e Swift utilizados
+
+Foram utilizados o Xcode 11 e Swift versão 5.
+
+
+
 
