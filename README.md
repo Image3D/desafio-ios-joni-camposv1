@@ -55,7 +55,6 @@ Implementamos também o Dark Mode para o Aplicativo.
 
 ![](images/LightDarkMode.png)
 
-
 ## O Swift Package Manager
 
 O novo SPM está integrado no XCode e foi utilizado como o Dependency Manager em vez de outros gerenciadores ( CocoaPos, por exemplo) para instalar a biblioteca [Kingfisher](https://github.com/onevcat/Kingfisher) para fazer o download e manipular imagens da Web.
