@@ -43,26 +43,53 @@ Foi utilizado o Clean Swift Xcode Template para facilitar a criação da arquite
 
 ## Serviços
 
-
 As chamadas à API da Marvel foram testadas no [PostMan](https://www.postman.com/) antes de implementarmos os serviços no projeto.
 
 Todos os serviços foram feitos com as bibliotecas nativas do iOS.
+
+Não foram implementados teste unitários por se tratar de um único serviço de API que foi validado utilizando o PostMan. A versão 2 deste desafio irá contar com os Testes Unitários.
 
 
 ## Dark Mode 
 
 Também foi implementado o Dark Mode para o Aplicativo.
 
-## O Swift Package Manager
 
-O novo SPM está integrado no XCode e foi utilizado como o Dependency Manager em vez de outros gerenciadores ( CocoaPos, por exemplo) para instalar a biblioteca [Kingfisher](https://github.com/onevcat/Kingfisher) para fazer o download e manipular imagens da Web.
+
+## Utilização do XCode Swift Package Manager
+
+O novo SPM está integrado no XCode e foi utilizado como Dependency Manager em vez de outros gerenciadores, como o CocoaPods, por exemplo, para instalar a biblioteca [Kingfisher](https://github.com/onevcat/Kingfisher) utilizada para fazer o download e manipular imagens da Web em uma UIImageView
 
 Não é necessário fazer nenhuma instalação de Pods. Nenhum outra biblioteca ou pacote foi instalada.
 
 
 ## Xcode e Swift utilizados
 
-Foram utilizados o Xcode 11 e Swift versão 5.
+Foram utilizados o Xcode versão 11 e Swift versão 5.
+
+
+## Melhorias
+
+Várias melhorias são possíveis:
+
+- Melhorar os controles de Up / Down da paginação
+- Implementar chamadas da API um único serviço
+- Implementar Unit Tests e UI Tests
+
+
+## Versionamento do Projeto
+
+O versionamento do projeto foi feito com o git e o resultado armazenado no GitHub.
+
+
+## Experiência com o Desafio
+
+Implementar este projeto utilizando a arquitetura Clean Swift foi um grande desafio, dado o pouco tempo que tive para executar o projeto completo, desde o início até a finalização foram menos que 3 dias.
+
+Espero que eu possa ter contribuído para a comunidade com esta experiência. 
+
+
+
 
 
 
