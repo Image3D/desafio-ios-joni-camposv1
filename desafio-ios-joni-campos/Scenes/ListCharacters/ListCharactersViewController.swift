@@ -97,7 +97,7 @@ class ListCharactersViewController: UITableViewController, ListCharactersDisplay
   func displaySomething(viewModel: ListCharacters.Something.ViewModel)
   {
     
-    print("Mostre os personagens")
+    //print("Mostre os personagens")
     
 
     //trata erros da API result
@@ -174,7 +174,6 @@ class ListCharactersViewController: UITableViewController, ListCharactersDisplay
         //executa o loop da Table View para a celula = celulaID
         let celula = tableView.dequeueReusableCell(withIdentifier: celulaID, for: indexPath) as! celula
         
-        
         celula.nomeCiente.text = personagemLinha?.name
         
         let imagePath = (personagemLinha?.thumbnail?.path ?? "") + "." + (personagemLinha?.thumbnail?.thumbnailExtension ?? "")
@@ -197,20 +196,45 @@ class ListCharactersViewController: UITableViewController, ListCharactersDisplay
     
   
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if indexPath.row ==   (oComics?.data?.count ?? 0) - 1 {
-           let resultado =  interactor?.proximaPagina()
+        
+        let total: Int = oComics?.data?.total ?? 0
+        
+        let contagem: Int = oComics?.data?.count ?? 0
+        
+        //Se ainda tem dados traga mais um grupo
+         if indexPath.row == contagem - 1 {
+            
+        let index = contagem + 20
+            
+            if contagem < total {
+                interactor?.proximaPagina(limit: index, offset: 0)
+            }
+        
+        
         }
+         
     }
     
+    
+    
+    //MARK:- Check direction
+    
+    override func scrollViewWillEndDragging(_ tableView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+               
+               
+               if targetContentOffset.pointee.y < tableView.contentOffset.y {
+                   // it's going up
+                print("Going UP")
+                print(targetContentOffset.pointee.y)
+                print(tableView.contentOffset.y)
+               } else {
+                   // it's going down
+                print("Going Down")
+                print(targetContentOffset.pointee.y)
+                print(tableView.contentOffset.y)
+               }
+    }
 
-    
-    
-    
-    
-    
-    
-    
-     
      //MARK: - Routing
      
      // Chama a tela do detalhe passando o indexPath selecionado, isto é a linha que foi selecionado na TableView

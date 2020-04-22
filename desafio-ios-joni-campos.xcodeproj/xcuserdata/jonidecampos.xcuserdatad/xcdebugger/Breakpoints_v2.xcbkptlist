@@ -30,8 +30,8 @@
             filePath = "desafio-ios-joni-campos/Scenes/ListCharacters/ListCharactersInteractor.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "doSomething(request:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -80,7 +80,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "54"
             endingLineNumber = "54"
-            landmarkName = "callAPIMarvelCharacters(offset:completion:)"
+            landmarkName = "callAPIMarvelCharacters(limit:offset:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -112,7 +112,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
             endingLineNumber = "52"
-            landmarkName = "callAPIMarvelCharacters(offset:completion:)"
+            landmarkName = "callAPIMarvelCharacters(limit:offset:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -142,25 +142,9 @@
             filePath = "desafio-ios-joni-campos/Scenes/ListCharacters/ListCharactersInteractor.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "doSomething(request:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3A28BAEF-0947-4011-BEC3-8D0E51CE9E93"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "desafio-ios-joni-campos/Scenes/ListCharacters/ListCharactersViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "176"
-            endingLineNumber = "176"
-            landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -400,15 +384,31 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "29"
             endingLineNumber = "29"
-            landmarkName = "callAPIMarvelCharacters(offset:completion:)"
+            landmarkName = "callAPIMarvelCharacters(limit:offset:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B4EFD7D2-A301-4363-9134-AE9367A43AAA"
-            shouldBeEnabled = "Yes"
+            uuid = "1DEE3DC6-EE71-490C-8AE2-5F2BDAED5ACD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "desafio-ios-joni-campos/Scenes/ListCharacters/ListCharactersInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "proximaPagina(limit:offset:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C898989C-A08E-4765-A0CC-54F8B1E8E67B"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "desafio-ios-joni-campos/Scenes/ListCharacters/ListCharactersViewController.swift"
@@ -417,6 +417,102 @@
             startingLineNumber = "200"
             endingLineNumber = "200"
             landmarkName = "tableView(_:willDisplay:forRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D1FA1928-4903-4FC1-B146-042DB3C08D77"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "desafio-ios-joni-campos/Scenes/ListCharacters/ListCharactersInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "proximaPagina(limit:offset:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D1FA1928-4903-4FC1-B146-042DB3C08D77 - eaf86a8d022554a9"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "desafio_ios_joni_campos.ListCharactersInteractor.proximaPagina(limit: Swift.Int, offset: Swift.Int) -&gt; ()"
+                  moduleName = "desafio-ios-joni-campos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonidecampos/Documents/Projetos/Clientes/Capgemini/NovoDesafioTesteJoni/desafio-ios-joni-campos/desafio-ios-joni-campos/Scenes/ListCharacters/ListCharactersInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "54">
+               </Location>
+               <Location
+                  uuid = "D1FA1928-4903-4FC1-B146-042DB3C08D77 - b9fb96a8a5fd0650"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (desafio_ios_joni_campos.CharacterDataWrapper) -&gt; () in desafio_ios_joni_campos.ListCharactersInteractor.proximaPagina(limit: Swift.Int, offset: Swift.Int) -&gt; ()"
+                  moduleName = "desafio-ios-joni-campos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonidecampos/Documents/Projetos/Clientes/Capgemini/NovoDesafioTesteJoni/desafio-ios-joni-campos/desafio-ios-joni-campos/Scenes/ListCharacters/ListCharactersInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "649">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9D8C3F9A-CD9D-4096-8FA8-9F34D52DCF60"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "desafio-ios-joni-campos/Scenes/ListCharacters/ListCharactersViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
+            landmarkName = "tableView(_:willDisplay:forRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5DCFACD1-A67A-424B-90B2-9DB9CB1A2D1E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "desafio-ios-joni-campos/Scenes/ListCharacters/ListCharactersViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "210"
+            endingLineNumber = "210"
+            landmarkName = "tableView(_:willDisplay:forRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9400FDA6-7A25-4F1A-9B31-D6A124E43215"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "desafio-ios-joni-campos/Scenes/ListCharacters/ListCharactersViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "225"
+            endingLineNumber = "225"
+            landmarkName = "scrollViewWillEndDragging(_:withVelocity:targetContentOffset:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

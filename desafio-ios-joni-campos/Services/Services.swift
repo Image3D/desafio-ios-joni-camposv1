@@ -19,14 +19,14 @@ class Services {
     
     
     
-    static func callAPIMarvelCharacters(offset: Int, completion: @escaping (_ result: CharacterDataWrapper ) ->() ){
+    static func callAPIMarvelCharacters(limit: Int, offset: Int, completion: @escaping (_ result: CharacterDataWrapper ) ->() ){
         
-        limit = 20
+        //limit = 20
      // var apiOffset = offset
         
         
         // Marvel API Call
-        let jsonUrlString = "https://gateway.marvel.com/v1/public/characters?ts=1&apikey=5ad9e048deff94a55ea68027047f675e&hash=3aea5e30d97860d6ca70af9474173c1f&limit=" + (limit!.description ) + "&offset=" + offset.description
+        let jsonUrlString = "https://gateway.marvel.com/v1/public/characters?ts=1&apikey=5ad9e048deff94a55ea68027047f675e&hash=3aea5e30d97860d6ca70af9474173c1f&limit=" + (limit.description ) + "&offset=" + offset.description
 
 
         guard let url = URL(string: jsonUrlString)
