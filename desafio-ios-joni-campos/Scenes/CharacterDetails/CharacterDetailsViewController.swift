@@ -123,7 +123,7 @@ class CharacterDetailsViewController: UIViewController, CharacterDetailsDisplayL
     @IBAction func HDCara(_ sender: Any) {
         
         selectedPersonagemID = personagem.id
-        //self.performSegue(withIdentifier: "ExpensiveComic", sender: sender)
+       
         
     }
     

@@ -141,7 +141,6 @@
 		9C40450824475C4B002AD44B /* desafio-ios-joni-campos */ = {
 			isa = PBXGroup;
 			children = (
-				9C40456424476C0F002AD44B /* Extensions */,
 				9C40453C24475CBB002AD44B /* Scenes */,
 				9C40453B24475CA7002AD44B /* Services */,
 				9C40450924475C4B002AD44B /* AppDelegate.swift */,
@@ -229,13 +228,6 @@
 				9C40455D24476BF4002AD44B /* CharacterExpensiveComicInteractor.swift */,
 			);
 			path = CharacterExpensiveComic;
-			sourceTree = "<group>";
-		};
-		9C40456424476C0F002AD44B /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

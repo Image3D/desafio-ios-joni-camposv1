@@ -124,15 +124,6 @@ class CharacterExpensiveComicViewController: UIViewController, CharacterExpensiv
     expensiveImage.kf.setImage(with: url, options: [.processor(processor)])
   
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
     }
     
     

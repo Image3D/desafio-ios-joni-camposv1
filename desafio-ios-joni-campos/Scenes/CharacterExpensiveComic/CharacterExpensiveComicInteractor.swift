@@ -28,12 +28,11 @@ class CharacterExpensiveComicInteractor: CharacterExpensiveComicBusinessLogic, C
     var worker: CharacterExpensiveComicWorker?
     //var name: String = ""
     
-    // MARK: Do something
+    // MARK:- Do something
     
     func doSomething(request: CharacterExpensiveComic.Something.Request)
     {
-        //    worker = CharacterExpensiveComicWorker()
-        //    worker?.doSomeWork()
+       
         
         Services.callAPIMarvelCharactersID{ (result) in
             
