@@ -198,7 +198,7 @@ class ListCharactersViewController: UITableViewController, ListCharactersDisplay
   
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if indexPath.row ==   (oComics?.data?.count ?? 0) - 1 {
-            interactor?.proximaPagina()
+           let resultado =  interactor?.proximaPagina()
         }
     }
     

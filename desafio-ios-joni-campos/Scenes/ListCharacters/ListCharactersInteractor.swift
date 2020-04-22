@@ -60,7 +60,7 @@ class ListCharactersInteractor: ListCharactersBusinessLogic, ListCharactersDataS
     }
     
     
-    func proximaPagina() {
+    func proximaPagina() -> CharacterDataWrapper{
         page += 1
         let offset = page * 20
         
@@ -68,9 +68,11 @@ class ListCharactersInteractor: ListCharactersBusinessLogic, ListCharactersDataS
          Services.callAPIMarvelCharacters(offset: offset){ (result) in
                   
                   oComics = result
+            
+           return oComics
                   
-                  let response = ListCharacters.Something.Response(resultado: result)
-                  self.presenter?.presentSomething(response: response)
+//                  let response = ListCharacters.Something.Response(resultado: result)
+//                  self.presenter?.presentSomething(response: response)
                   
               }
     }
