@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C1055AE244F1F2A00530D3A /* desafio_ios_joni_camposTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40452024475C4D002AD44B /* desafio_ios_joni_camposTests.swift */; };
+		9C1769242451C12F003AD667 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1769232451C12F003AD667 /* Extension.swift */; };
 		9C1D558C244E0A2100ED3F16 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D558B244E0A2100ED3F16 /* Services.swift */; };
 		9C40450A24475C4B002AD44B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40450924475C4B002AD44B /* AppDelegate.swift */; };
 		9C40450C24475C4B002AD44B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40450B24475C4B002AD44B /* SceneDelegate.swift */; };
 		9C40451324475C4D002AD44B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C40451224475C4D002AD44B /* Assets.xcassets */; };
 		9C40451624475C4D002AD44B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C40451424475C4D002AD44B /* LaunchScreen.storyboard */; };
-		9C40452C24475C4D002AD44B /* desafio_ios_joni_camposUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40452B24475C4D002AD44B /* desafio_ios_joni_camposUITests.swift */; };
 		9C40454424475DC1002AD44B /* ListCharactersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40453E24475DC1002AD44B /* ListCharactersPresenter.swift */; };
 		9C40454524475DC1002AD44B /* ListCharactersWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40453F24475DC1002AD44B /* ListCharactersWorker.swift */; };
 		9C40454624475DC1002AD44B /* ListCharactersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40454024475DC1002AD44B /* ListCharactersRouter.swift */; };
@@ -32,6 +31,7 @@
 		9C40456124476BF4002AD44B /* CharacterExpensiveComicModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40455B24476BF4002AD44B /* CharacterExpensiveComicModels.swift */; };
 		9C40456224476BF4002AD44B /* CharacterExpensiveComicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40455C24476BF4002AD44B /* CharacterExpensiveComicViewController.swift */; };
 		9C40456324476BF4002AD44B /* CharacterExpensiveComicInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40455D24476BF4002AD44B /* CharacterExpensiveComicInteractor.swift */; };
+		9C4F76F02451B6C300945E71 /* desafio_ios_joni_campos_UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4F76EF2451B6C300945E71 /* desafio_ios_joni_campos_UnitTests.swift */; };
 		9CC81EC2244DEE7F00362BDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC81EC1244DEE7F00362BDD /* Main.storyboard */; };
 		9CC81EC4244DF4AD00362BDD /* Mainold.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC81EC3244DF4AD00362BDD /* Mainold.storyboard */; };
 		9CC81EC6244DF6C000362BDD /* celula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC81EC5244DF6C000362BDD /* celula.swift */; };
@@ -39,14 +39,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9C40451D24475C4D002AD44B /* PBXContainerItemProxy */ = {
+		9C40452824475C4D002AD44B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9C4044FE24475C4B002AD44B /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9C40450524475C4B002AD44B;
 			remoteInfo = "desafio-ios-joni-campos";
 		};
-		9C40452824475C4D002AD44B /* PBXContainerItemProxy */ = {
+		9C4F76F22451B6C300945E71 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9C4044FE24475C4B002AD44B /* Project object */;
 			proxyType = 1;
@@ -56,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C1769232451C12F003AD667 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		9C1D558B244E0A2100ED3F16 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		9C40450624475C4B002AD44B /* Personagens Marvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Personagens Marvel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C40450924475C4B002AD44B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,12 +64,7 @@
 		9C40451224475C4D002AD44B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C40451524475C4D002AD44B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C40451724475C4D002AD44B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C40451C24475C4D002AD44B /* desafio-ios-joni-camposTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "desafio-ios-joni-camposTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C40452024475C4D002AD44B /* desafio_ios_joni_camposTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desafio_ios_joni_camposTests.swift; sourceTree = "<group>"; };
-		9C40452224475C4D002AD44B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C40452724475C4D002AD44B /* desafio-ios-joni-camposUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "desafio-ios-joni-camposUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C40452B24475C4D002AD44B /* desafio_ios_joni_camposUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desafio_ios_joni_camposUITests.swift; sourceTree = "<group>"; };
-		9C40452D24475C4D002AD44B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C40453E24475DC1002AD44B /* ListCharactersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCharactersPresenter.swift; sourceTree = "<group>"; };
 		9C40453F24475DC1002AD44B /* ListCharactersWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCharactersWorker.swift; sourceTree = "<group>"; };
 		9C40454024475DC1002AD44B /* ListCharactersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCharactersRouter.swift; sourceTree = "<group>"; };
@@ -87,6 +83,9 @@
 		9C40455B24476BF4002AD44B /* CharacterExpensiveComicModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterExpensiveComicModels.swift; sourceTree = "<group>"; };
 		9C40455C24476BF4002AD44B /* CharacterExpensiveComicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterExpensiveComicViewController.swift; sourceTree = "<group>"; };
 		9C40455D24476BF4002AD44B /* CharacterExpensiveComicInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterExpensiveComicInteractor.swift; sourceTree = "<group>"; };
+		9C4F76ED2451B6C300945E71 /* desafio-ios-joni-campos-UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "desafio-ios-joni-campos-UnitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C4F76EF2451B6C300945E71 /* desafio_ios_joni_campos_UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desafio_ios_joni_campos_UnitTests.swift; sourceTree = "<group>"; };
+		9C4F76F12451B6C300945E71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CC81EC1244DEE7F00362BDD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9CC81EC3244DF4AD00362BDD /* Mainold.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mainold.storyboard; sourceTree = "<group>"; };
 		9CC81EC5244DF6C000362BDD /* celula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = celula.swift; sourceTree = "<group>"; };
@@ -101,14 +100,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C40451924475C4D002AD44B /* Frameworks */ = {
+		9C40452424475C4D002AD44B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C40452424475C4D002AD44B /* Frameworks */ = {
+		9C4F76EA2451B6C300945E71 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -118,12 +117,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C1769252451C13D003AD667 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9C1769232451C12F003AD667 /* Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9C4044FD24475C4B002AD44B = {
 			isa = PBXGroup;
 			children = (
 				9C40450824475C4B002AD44B /* desafio-ios-joni-campos */,
-				9C40451F24475C4D002AD44B /* desafio-ios-joni-camposTests */,
-				9C40452A24475C4D002AD44B /* desafio-ios-joni-camposUITests */,
+				9C1769252451C13D003AD667 /* Extensions */,
+				9C4F76EE2451B6C300945E71 /* desafio-ios-joni-campos-UnitTests */,
 				9C40450724475C4B002AD44B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -132,8 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				9C40450624475C4B002AD44B /* Personagens Marvel.app */,
-				9C40451C24475C4D002AD44B /* desafio-ios-joni-camposTests.xctest */,
 				9C40452724475C4D002AD44B /* desafio-ios-joni-camposUITests.xctest */,
+				9C4F76ED2451B6C300945E71 /* desafio-ios-joni-campos-UnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,24 +159,6 @@
 				9C40451724475C4D002AD44B /* Info.plist */,
 			);
 			path = "desafio-ios-joni-campos";
-			sourceTree = "<group>";
-		};
-		9C40451F24475C4D002AD44B /* desafio-ios-joni-camposTests */ = {
-			isa = PBXGroup;
-			children = (
-				9C40452024475C4D002AD44B /* desafio_ios_joni_camposTests.swift */,
-				9C40452224475C4D002AD44B /* Info.plist */,
-			);
-			path = "desafio-ios-joni-camposTests";
-			sourceTree = "<group>";
-		};
-		9C40452A24475C4D002AD44B /* desafio-ios-joni-camposUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9C40452B24475C4D002AD44B /* desafio_ios_joni_camposUITests.swift */,
-				9C40452D24475C4D002AD44B /* Info.plist */,
-			);
-			path = "desafio-ios-joni-camposUITests";
 			sourceTree = "<group>";
 		};
 		9C40453B24475CA7002AD44B /* Services */ = {
@@ -230,6 +219,15 @@
 			path = CharacterExpensiveComic;
 			sourceTree = "<group>";
 		};
+		9C4F76EE2451B6C300945E71 /* desafio-ios-joni-campos-UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				9C4F76EF2451B6C300945E71 /* desafio_ios_joni_campos_UnitTests.swift */,
+				9C4F76F12451B6C300945E71 /* Info.plist */,
+			);
+			path = "desafio-ios-joni-campos-UnitTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -253,24 +251,6 @@
 			productReference = 9C40450624475C4B002AD44B /* Personagens Marvel.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9C40451B24475C4D002AD44B /* desafio-ios-joni-camposTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9C40453324475C4D002AD44B /* Build configuration list for PBXNativeTarget "desafio-ios-joni-camposTests" */;
-			buildPhases = (
-				9C40451824475C4D002AD44B /* Sources */,
-				9C40451924475C4D002AD44B /* Frameworks */,
-				9C40451A24475C4D002AD44B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9C40451E24475C4D002AD44B /* PBXTargetDependency */,
-			);
-			name = "desafio-ios-joni-camposTests";
-			productName = "desafio-ios-joni-camposTests";
-			productReference = 9C40451C24475C4D002AD44B /* desafio-ios-joni-camposTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		9C40452624475C4D002AD44B /* desafio-ios-joni-camposUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C40453624475C4D002AD44B /* Build configuration list for PBXNativeTarget "desafio-ios-joni-camposUITests" */;
@@ -289,25 +269,43 @@
 			productReference = 9C40452724475C4D002AD44B /* desafio-ios-joni-camposUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		9C4F76EC2451B6C300945E71 /* desafio-ios-joni-campos-UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C4F76F42451B6C300945E71 /* Build configuration list for PBXNativeTarget "desafio-ios-joni-campos-UnitTests" */;
+			buildPhases = (
+				9C4F76E92451B6C300945E71 /* Sources */,
+				9C4F76EA2451B6C300945E71 /* Frameworks */,
+				9C4F76EB2451B6C300945E71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C4F76F32451B6C300945E71 /* PBXTargetDependency */,
+			);
+			name = "desafio-ios-joni-campos-UnitTests";
+			productName = "desafio-ios-joni-campos-UnitTests";
+			productReference = 9C4F76ED2451B6C300945E71 /* desafio-ios-joni-campos-UnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		9C4044FE24475C4B002AD44B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1140;
+				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Joni de Campos";
 				TargetAttributes = {
 					9C40450524475C4B002AD44B = {
 						CreatedOnToolsVersion = 11.4;
 					};
-					9C40451B24475C4D002AD44B = {
+					9C40452624475C4D002AD44B = {
 						CreatedOnToolsVersion = 11.4;
 						TestTargetID = 9C40450524475C4B002AD44B;
 					};
-					9C40452624475C4D002AD44B = {
-						CreatedOnToolsVersion = 11.4;
+					9C4F76EC2451B6C300945E71 = {
+						CreatedOnToolsVersion = 11.0;
 						TestTargetID = 9C40450524475C4B002AD44B;
 					};
 				};
@@ -329,8 +327,8 @@
 			projectRoot = "";
 			targets = (
 				9C40450524475C4B002AD44B /* desafio-ios-joni-campos */,
-				9C40451B24475C4D002AD44B /* desafio-ios-joni-camposTests */,
 				9C40452624475C4D002AD44B /* desafio-ios-joni-camposUITests */,
+				9C4F76EC2451B6C300945E71 /* desafio-ios-joni-campos-UnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -347,14 +345,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C40451A24475C4D002AD44B /* Resources */ = {
+		9C40452524475C4D002AD44B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C40452524475C4D002AD44B /* Resources */ = {
+		9C4F76EB2451B6C300945E71 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -368,6 +366,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C1769242451C12F003AD667 /* Extension.swift in Sources */,
 				9C40456024476BF4002AD44B /* CharacterExpensiveComicRouter.swift in Sources */,
 				9C40454824475DC1002AD44B /* ListCharactersViewController.swift in Sources */,
 				9C40455F24476BF4002AD44B /* CharacterExpensiveComicWorker.swift in Sources */,
@@ -393,34 +392,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C40451824475C4D002AD44B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9C1055AE244F1F2A00530D3A /* desafio_ios_joni_camposTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9C40452324475C4D002AD44B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C40452C24475C4D002AD44B /* desafio_ios_joni_camposUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C4F76E92451B6C300945E71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C4F76F02451B6C300945E71 /* desafio_ios_joni_campos_UnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9C40451E24475C4D002AD44B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9C40450524475C4B002AD44B /* desafio-ios-joni-campos */;
-			targetProxy = 9C40451D24475C4D002AD44B /* PBXContainerItemProxy */;
-		};
 		9C40452924475C4D002AD44B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9C40450524475C4B002AD44B /* desafio-ios-joni-campos */;
 			targetProxy = 9C40452824475C4D002AD44B /* PBXContainerItemProxy */;
+		};
+		9C4F76F32451B6C300945E71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C40450524475C4B002AD44B /* desafio-ios-joni-campos */;
+			targetProxy = 9C4F76F22451B6C300945E71 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -588,50 +586,6 @@
 			};
 			name = Release;
 		};
-		9C40453424475C4D002AD44B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CCJ698U8UF;
-				INFOPLIST_FILE = "desafio-ios-joni-camposTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.image3d.desafio-ios-joni-camposTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/desafio-ios-joni-campos.app/desafio-ios-joni-campos";
-			};
-			name = Debug;
-		};
-		9C40453524475C4D002AD44B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CCJ698U8UF;
-				INFOPLIST_FILE = "desafio-ios-joni-camposTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.image3d.desafio-ios-joni-camposTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/desafio-ios-joni-campos.app/desafio-ios-joni-campos";
-			};
-			name = Release;
-		};
 		9C40453724475C4D002AD44B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -674,6 +628,48 @@
 			};
 			name = Release;
 		};
+		9C4F76F52451B6C300945E71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CCJ698U8UF;
+				INFOPLIST_FILE = "desafio-ios-joni-campos-UnitTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.image3d.desafio-ios-joni-campos-UnitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Personagens Marvel.app/Personagens Marvel";
+			};
+			name = Debug;
+		};
+		9C4F76F62451B6C300945E71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CCJ698U8UF;
+				INFOPLIST_FILE = "desafio-ios-joni-campos-UnitTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.image3d.desafio-ios-joni-campos-UnitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Personagens Marvel.app/Personagens Marvel";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -695,20 +691,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C40453324475C4D002AD44B /* Build configuration list for PBXNativeTarget "desafio-ios-joni-camposTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9C40453424475C4D002AD44B /* Debug */,
-				9C40453524475C4D002AD44B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		9C40453624475C4D002AD44B /* Build configuration list for PBXNativeTarget "desafio-ios-joni-camposUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C40453724475C4D002AD44B /* Debug */,
 				9C40453824475C4D002AD44B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C4F76F42451B6C300945E71 /* Build configuration list for PBXNativeTarget "desafio-ios-joni-campos-UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C4F76F52451B6C300945E71 /* Debug */,
+				9C4F76F62451B6C300945E71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -10,13 +10,13 @@
         <!--Personagens Marvel-->
         <scene sceneID="Ocs-qM-Eap">
             <objects>
-                <tableViewController id="cbs-07-tZ7" customClass="ListCharactersViewController" customModule="desafio_ios_joni_campos" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CharacterList" id="cbs-07-tZ7" customClass="ListCharactersViewController" customModule="Personagens_Marvel" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="163" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="apI-9e-XSx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="celulaID" editingAccessoryType="disclosureIndicator" rowHeight="163" id="lxJ-Z2-LIb" customClass="celula" customModule="desafio_ios_joni_campos" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="celulaID" editingAccessoryType="disclosureIndicator" rowHeight="163" id="lxJ-Z2-LIb" customClass="celula" customModule="Personagens_Marvel" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="163"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lxJ-Z2-LIb" id="56Z-fg-EJA">
@@ -77,7 +77,7 @@
         <!--Character Details View Controller-->
         <scene sceneID="jBe-BR-Ugo">
             <objects>
-                <viewController id="9hL-gh-uLg" customClass="CharacterDetailsViewController" customModule="desafio_ios_joni_campos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9hL-gh-uLg" customClass="CharacterDetailsViewController" customModule="Personagens_Marvel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kxb-Ct-kpU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,7 +153,7 @@
         <!--HQ mais Cara-->
         <scene sceneID="I8c-0v-zd5">
             <objects>
-                <viewController id="VcX-Cy-8XH" customClass="CharacterExpensiveComicViewController" customModule="desafio_ios_joni_campos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VcX-Cy-8XH" customClass="CharacterExpensiveComicViewController" customModule="Personagens_Marvel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cvk-56-BWy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
