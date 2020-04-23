@@ -10,52 +10,50 @@ import XCTest
 @testable import Personagens_Marvel
 
 class PersonagensTests: XCTestCase {
-
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
         super.setUp()
     }
-
+    
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+       
         super.tearDown()
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        print("Executando testes")
-    }
-
-    //MARK: - Teste ListCharactersViewController
-        func testViewLoading(){
-            guard let vc = getViewController(loading: true) else {  fail(); return }
     
-            XCTAssertNotNil(vc.exibirMensagem(titulo: "Mensagem", mensagem: "Mensagem carregada"))
-        }
+    //MARK: - Teste ListCharactersViewController
+    func testViewLoading(){
+        
+        guard let vc = getViewController(loading: true) else {  fail(); return }
+        
+        XCTAssertNotNil(vc.exibirMensagem(titulo: "Mensagem", mensagem: "Mensagem carregada"))
+    }
     
     
     //MARK: - Auxiliary testing functions
-           func getViewController(loading: Bool) -> ListCharactersViewController? {
-       
-               guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "CharacterList") as? ListCharactersViewController else {
-                   return nil
-               }
-       
-               if loading {
-                   let _ = vc.view // view called
-               }
-       
-               return vc
-           }
-       
-           func fail() {
-                   XCTAssert(false, "Falha!")
-               }
-       
-       
-       
-
+    
+    
+    func getViewController(loading: Bool) -> ListCharactersViewController? {
+        
+        guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "CharacterList") as? ListCharactersViewController else {
+            return nil
+        }
+        
+        if loading {
+            let _ = vc.view // view called
+        }
+        
+        return vc
+    }
+    
+    func fail() {
+        XCTAssert(false, "Falha!")
+    }
+    
+    
+    
+    
     
     
     

@@ -135,6 +135,7 @@
 				9C40450824475C4B002AD44B /* desafio-ios-joni-campos */,
 				9C1769252451C13D003AD667 /* Extensions */,
 				9C0DBF1C2451FC4F002641E5 /* PersonagensTests */,
+				9C0DBF0D2451FB4E002641E5 /* desafio-ios-joni-camposUITests */,
 				9C40450724475C4B002AD44B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -160,7 +161,6 @@
 				9C40451224475C4D002AD44B /* Assets.xcassets */,
 				9C40451424475C4D002AD44B /* LaunchScreen.storyboard */,
 				9C40451724475C4D002AD44B /* Info.plist */,
-				9C0DBF0D2451FB4E002641E5 /* desafio-ios-joni-camposUITests */,
 			);
 			path = "desafio-ios-joni-campos";
 			sourceTree = "<group>";
