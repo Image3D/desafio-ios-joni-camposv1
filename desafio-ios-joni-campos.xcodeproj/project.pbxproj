@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C1769242451C12F003AD667 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1769232451C12F003AD667 /* Extension.swift */; };
 		9C1D558C244E0A2100ED3F16 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D558B244E0A2100ED3F16 /* Services.swift */; };
 		9C40450A24475C4B002AD44B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40450924475C4B002AD44B /* AppDelegate.swift */; };
 		9C40450C24475C4B002AD44B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40450B24475C4B002AD44B /* SceneDelegate.swift */; };
@@ -36,6 +35,7 @@
 		9CC81EC4244DF4AD00362BDD /* Mainold.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC81EC3244DF4AD00362BDD /* Mainold.storyboard */; };
 		9CC81EC6244DF6C000362BDD /* celula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC81EC5244DF6C000362BDD /* celula.swift */; };
 		9CC81EC9244DF8F400362BDD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9CC81EC8244DF8F400362BDD /* Kingfisher */; };
+		9CFE906D2451C64600EB1631 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1769232451C12F003AD667 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -366,7 +366,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C1769242451C12F003AD667 /* Extension.swift in Sources */,
 				9C40456024476BF4002AD44B /* CharacterExpensiveComicRouter.swift in Sources */,
 				9C40454824475DC1002AD44B /* ListCharactersViewController.swift in Sources */,
 				9C40455F24476BF4002AD44B /* CharacterExpensiveComicWorker.swift in Sources */,
@@ -404,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C4F76F02451B6C300945E71 /* desafio_ios_joni_campos_UnitTests.swift in Sources */,
+				9CFE906D2451C64600EB1631 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

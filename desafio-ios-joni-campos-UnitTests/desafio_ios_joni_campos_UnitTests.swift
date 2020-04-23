@@ -6,8 +6,10 @@
 //  Copyright © 2020 Joni de Campos. All rights reserved.
 //
 
+
 import XCTest
 @testable import Personagens_Marvel
+
 
 class desafio_ios_joni_campos_UnitTests: XCTestCase {
     
@@ -27,7 +29,7 @@ class desafio_ios_joni_campos_UnitTests: XCTestCase {
     
     //MARK: - Teste ListCharactersViewController
     func testViewLoading(){
-        guard let vc = getViewController(loading: true) else { XCTestCase.fail(); return }
+        guard let vc = getViewController(loading: true) else { fail(); return }
         
         XCTAssertNotNil(vc.exibirMensagem(titulo: "Mensagem", mensagem: "Mensagem carregada"))
     }
@@ -47,5 +49,8 @@ class desafio_ios_joni_campos_UnitTests: XCTestCase {
         
         return vc
     }
+    
+    
+   
     
 }
