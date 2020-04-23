@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9C40452624475C4D002AD44B"
-               BuildableName = "desafio-ios-joni-camposUITests.xctest"
-               BlueprintName = "desafio-ios-joni-camposUITests"
+               BlueprintIdentifier = "9C0DBEFD2451F8C9002641E5"
+               BuildableName = "PersonagensMarvelTests.xctest"
+               BlueprintName = "PersonagensMarvelTests"
                ReferencedContainer = "container:desafio-ios-joni-campos.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9C4F76EC2451B6C300945E71"
-               BuildableName = "desafio-ios-joni-campos-UnitTests.xctest"
-               BlueprintName = "desafio-ios-joni-campos-UnitTests"
+               BlueprintIdentifier = "9C0DBF1A2451FC4F002641E5"
+               BuildableName = "PersonagensTests.xctest"
+               BlueprintName = "PersonagensTests"
                ReferencedContainer = "container:desafio-ios-joni-campos.xcodeproj">
             </BuildableReference>
          </TestableReference>

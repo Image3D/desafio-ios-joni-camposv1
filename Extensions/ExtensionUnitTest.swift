@@ -10,8 +10,8 @@ import Foundation
 
 import XCTest
 
-extension XCTestCase {
-    func fail() {
-        XCTAssert(false, "Falha!")
-    }
-}
+//extension XCTestCase {
+//    func fail() {
+//        XCTAssert(false, "Falha!")
+//    }
+//}
