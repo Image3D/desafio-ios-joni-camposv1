@@ -9,7 +9,7 @@
 import XCTest
 @testable import Personagens_Marvel
 
-class PersonagensTests: XCTestCase {
+class ListCharactersViewControllerTestsLixo: XCTestCase {
     
     override func setUp() {
         
