@@ -10,7 +10,8 @@
 //  see http://clean-swift.com
 //
 
-@testable import desafio_ios_joni_campos
+//@testable import desafio_ios_joni_campos
+@testable import Personagens_Marvel
 import XCTest
 
 class CharacterExpensiveComicWorkerTests: XCTestCase

@@ -10,7 +10,8 @@
 //  see http://clean-swift.com
 //
 
-@testable import desafio_ios_joni_campos
+//@testable import desafio_ios_joni_campos
+@testable import Personagens_Marvel
 import XCTest
 
 class ListCharactersViewControllerTests: XCTestCase
@@ -54,6 +55,10 @@ class ListCharactersViewControllerTests: XCTestCase
   
   class ListCharactersBusinessLogicSpy: ListCharactersBusinessLogic
   {
+    
+    func proximaPagina(limit: Int, offset: Int) {
+        
+    }
     var doSomethingCalled = false
     
     func doSomething(request: ListCharacters.Something.Request)
@@ -80,11 +85,16 @@ class ListCharactersViewControllerTests: XCTestCase
   func testDisplaySomething()
   {
     // Given
-    let viewModel = ListCharacters.Something.ViewModel()
+    
+    
+    //by Joni
+//    let viewModel = ListCharacters.Something.ViewModel(oCharacters: ListCharacters.Something.Response)
     
     // When
-    loadView()
-    sut.displaySomething(viewModel: viewModel)
+    
+    
+//    loadView()
+//    sut.displaySomething(viewModel: viewModel)
     
     // Then
     //XCTAssertEqual(sut.nameTextField.text, "", "displaySomething(viewModel:) should update the name text field")

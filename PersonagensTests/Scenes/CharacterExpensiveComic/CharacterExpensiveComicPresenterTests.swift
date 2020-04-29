@@ -10,7 +10,8 @@
 //  see http://clean-swift.com
 //
 
-@testable import desafio_ios_joni_campos
+//@testable import desafio_ios_joni_campos
+@testable import Personagens_Marvel
 import XCTest
 
 class CharacterExpensiveComicPresenterTests: XCTestCase
@@ -56,9 +57,14 @@ class CharacterExpensiveComicPresenterTests: XCTestCase
   func testPresentSomething()
   {
     // Given
+    
+    
+
     let spy = CharacterExpensiveComicDisplayLogicSpy()
     sut.viewController = spy
-    let response = CharacterExpensiveComic.Something.Response()
+    let response = CharacterExpensiveComic.Something.Response(resultado: oExpensive!)
+    
+   
     
     // When
     sut.presentSomething(response: response)

@@ -6,8 +6,9 @@
 //  Copyright © 2020 Joni de Campos. All rights reserved.
 //
 
-import XCTest
 @testable import Personagens_Marvel
+import XCTest
+//@testable import Personagens_Marvel
 
 class ListCharactersViewControllerTestsLixo: XCTestCase {
     
