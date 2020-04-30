@@ -47,6 +47,21 @@ struct CharacterDataWrapper: Decodable{
     let data: CharacterDataContainer?
     let etag: String?
     
+    
+    init(code: Int, status: String, copyright: String, attributionText: String, attributionHTML: String, data: CharacterDataContainer, etag: String){
+        
+        self.code = code
+        self.status = status
+        self.copyright = copyright
+        self.attributionText = attributionText
+        self.attributionHTML = attributionHTML
+        self.data = data
+        self.etag = etag
+        
+    }
+    
+    
+    
 }
 
 //MARK: - CharacterDataContainerClass
@@ -57,13 +72,28 @@ struct CharacterDataContainer: Decodable{
     let count: Int?
     let characters: [Character]?
     
-    private enum CodingKeys: String, CodingKey {
-        case offset = "offset"
-        case limit = "limit"
-        case total = "total"
-        case count = "count"
-        case characters = "results"
+    init(offset: Int, limit: Int, total: Int, count: Int, characters: [Character])
+    {
+        
+        self.offset = offset
+        self.limit  = limit
+        self.total = total
+        self.count = count
+        self.characters = characters
+        
+        
     }
+    
+    
+    
+    
+//    private enum CodingKeys: String, CodingKey {
+//        case offset = "offset"
+//        case limit = "limit"
+//        case total = "total"
+//        case count = "count"
+//        case characters = "results"
+//    }
     
 
 }
@@ -82,6 +112,20 @@ struct Character: Decodable{
     let stories: Stories?
     let events: Comics?
     let series: Comics?
+    
+    init( id: Int, name: String, description: String, modified: Date, resourceURI: String, urls: [URLElement], thumbnail: Thumbnail, comics: Comics, stories: Stories, events: Comics, series: Comics){
+        self.id = id
+        self.name = name
+        self.description = description
+        self.modified = modified
+        self.resourceURI = resourceURI
+        self.urls = urls
+        self.thumbnail = thumbnail
+        self.comics = comics
+        self.stories = stories
+        self.events = events
+        self.series = series
+    }
     
     
 }

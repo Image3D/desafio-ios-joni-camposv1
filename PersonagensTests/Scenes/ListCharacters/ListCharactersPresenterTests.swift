@@ -58,10 +58,11 @@ class ListCharactersPresenterTests: XCTestCase
   {
     // Given
     
+    let oResultado: CharacterDataWrapper 
     
     let spy = ListCharactersDisplayLogicSpy()
     sut.viewController = spy
-    let response = ListCharacters.Something.Response(resultado: )
+    let response = ListCharacters.Something.Response(resultado: oResultado!)
     
     // When
     sut.presentSomething(response: response)

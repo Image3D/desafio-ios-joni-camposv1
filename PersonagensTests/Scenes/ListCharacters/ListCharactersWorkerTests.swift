@@ -50,6 +50,7 @@ class ListCharactersWorkerTests: XCTestCase
     
     // When
     
+    
     // Then
   }
 }

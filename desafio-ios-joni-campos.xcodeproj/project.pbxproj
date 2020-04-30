@@ -39,6 +39,9 @@
 		9C40456124476BF4002AD44B /* CharacterExpensiveComicModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40455B24476BF4002AD44B /* CharacterExpensiveComicModels.swift */; };
 		9C40456224476BF4002AD44B /* CharacterExpensiveComicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40455C24476BF4002AD44B /* CharacterExpensiveComicViewController.swift */; };
 		9C40456324476BF4002AD44B /* CharacterExpensiveComicInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40455D24476BF4002AD44B /* CharacterExpensiveComicInteractor.swift */; };
+		9C56DE3E245B31CD00435E7A /* characters.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C56DE3D245B31CD00435E7A /* characters.json */; };
+		9C56DE40245B34B400435E7A /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C56DE3F245B34B400435E7A /* MockService.swift */; };
+		9C56DE42245B34F000435E7A /* MockProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C56DE41245B34F000435E7A /* MockProtocols.swift */; };
 		9CC81EC2244DEE7F00362BDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC81EC1244DEE7F00362BDD /* Main.storyboard */; };
 		9CC81EC4244DF4AD00362BDD /* Mainold.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC81EC3244DF4AD00362BDD /* Mainold.storyboard */; };
 		9CC81EC6244DF6C000362BDD /* celula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC81EC5244DF6C000362BDD /* celula.swift */; };
@@ -99,6 +102,9 @@
 		9C40455B24476BF4002AD44B /* CharacterExpensiveComicModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterExpensiveComicModels.swift; sourceTree = "<group>"; };
 		9C40455C24476BF4002AD44B /* CharacterExpensiveComicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterExpensiveComicViewController.swift; sourceTree = "<group>"; };
 		9C40455D24476BF4002AD44B /* CharacterExpensiveComicInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterExpensiveComicInteractor.swift; sourceTree = "<group>"; };
+		9C56DE3D245B31CD00435E7A /* characters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = characters.json; sourceTree = SOURCE_ROOT; };
+		9C56DE3F245B34B400435E7A /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
+		9C56DE41245B34F000435E7A /* MockProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockProtocols.swift; sourceTree = "<group>"; };
 		9CC81EC1244DEE7F00362BDD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9CC81EC3244DF4AD00362BDD /* Mainold.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mainold.storyboard; sourceTree = "<group>"; };
 		9CC81EC5244DF6C000362BDD /* celula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = celula.swift; sourceTree = "<group>"; };
@@ -201,7 +207,6 @@
 			isa = PBXGroup;
 			children = (
 				9C40450824475C4B002AD44B /* desafio-ios-joni-campos */,
-				9C1769252451C13D003AD667 /* Extensions */,
 				9C0DBF1C2451FC4F002641E5 /* PersonagensTests */,
 				9C0DBF0D2451FB4E002641E5 /* desafio-ios-joni-camposUITests */,
 				9C40450724475C4B002AD44B /* Products */,
@@ -229,6 +234,8 @@
 				9C40451224475C4D002AD44B /* Assets.xcassets */,
 				9C40451424475C4D002AD44B /* LaunchScreen.storyboard */,
 				9C40451724475C4D002AD44B /* Info.plist */,
+				9C56DE3C245B31B500435E7A /* Mocks */,
+				9C1769252451C13D003AD667 /* Extensions */,
 			);
 			path = "desafio-ios-joni-campos";
 			sourceTree = "<group>";
@@ -289,6 +296,16 @@
 				9C40455D24476BF4002AD44B /* CharacterExpensiveComicInteractor.swift */,
 			);
 			path = CharacterExpensiveComic;
+			sourceTree = "<group>";
+		};
+		9C56DE3C245B31B500435E7A /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				9C56DE3D245B31CD00435E7A /* characters.json */,
+				9C56DE3F245B34B400435E7A /* MockService.swift */,
+				9C56DE41245B34F000435E7A /* MockProtocols.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,6 +404,7 @@
 			files = (
 				9CC81EC2244DEE7F00362BDD /* Main.storyboard in Resources */,
 				9C40451624475C4D002AD44B /* LaunchScreen.storyboard in Resources */,
+				9C56DE3E245B31CD00435E7A /* characters.json in Resources */,
 				9C40451324475C4D002AD44B /* Assets.xcassets in Resources */,
 				9CC81EC4244DF4AD00362BDD /* Mainold.storyboard in Resources */,
 			);
@@ -424,12 +442,14 @@
 				9C40455F24476BF4002AD44B /* CharacterExpensiveComicWorker.swift in Sources */,
 				9C1D558C244E0A2100ED3F16 /* Services.swift in Sources */,
 				9C40455524476BD6002AD44B /* CharacterDetailsModels.swift in Sources */,
+				9C56DE42245B34F000435E7A /* MockProtocols.swift in Sources */,
 				9C40456224476BF4002AD44B /* CharacterExpensiveComicViewController.swift in Sources */,
 				9C40455324476BD6002AD44B /* CharacterDetailsWorker.swift in Sources */,
 				9C40454924475DC1002AD44B /* ListCharactersInteractor.swift in Sources */,
 				9C40455724476BD6002AD44B /* CharacterDetailsInteractor.swift in Sources */,
 				9C40454624475DC1002AD44B /* ListCharactersRouter.swift in Sources */,
 				9C40454424475DC1002AD44B /* ListCharactersPresenter.swift in Sources */,
+				9C56DE40245B34B400435E7A /* MockService.swift in Sources */,
 				9C40456324476BF4002AD44B /* CharacterExpensiveComicInteractor.swift in Sources */,
 				9C40454524475DC1002AD44B /* ListCharactersWorker.swift in Sources */,
 				9CC81EC6244DF6C000362BDD /* celula.swift in Sources */,
