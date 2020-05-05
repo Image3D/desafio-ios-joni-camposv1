@@ -58,16 +58,42 @@ class ListCharactersPresenterTests: XCTestCase
   {
     // Given
     
-    let oResultado: CharacterDataWrapper 
+    let oResultado: CharacterDataWrapper?
     
-    let spy = ListCharactersDisplayLogicSpy()
-    sut.viewController = spy
-    let response = ListCharacters.Something.Response(resultado: oResultado!)
+    let url = Bundle.main.url(forResource: "characters", withExtension: "json")!
+    do {
+        let data = try Data(contentsOf: url)
+        oResultado = try! JSONDecoder().decode(CharacterDataWrapper.self, from: data)
+        
+        
+        let spy = ListCharactersDisplayLogicSpy()
+        sut.viewController = spy
+        let response = ListCharacters.Something.Response(resultado: oResultado!)
+        
+        // When
+        sut.presentSomething(response: response)
+        
+        // Then
+        XCTAssertTrue(spy.displaySomethingCalled, "presentSomething(response:) should ask the view controller to display the result")
+        
+        
+        
+    } catch {
+        print(error)
+    }
     
-    // When
-    sut.presentSomething(response: response)
     
-    // Then
-    XCTAssertTrue(spy.displaySomethingCalled, "presentSomething(response:) should ask the view controller to display the result")
+    
+    
+    
+//    let spy = ListCharactersDisplayLogicSpy()
+//    sut.viewController = spy
+//    let response = ListCharacters.Something.Response(resultado: oResultado!)
+//
+//    // When
+//    sut.presentSomething(response: response)
+//
+//    // Then
+//    XCTAssertTrue(spy.displaySomethingCalled, "presentSomething(response:) should ask the view controller to display the result")
   }
 }

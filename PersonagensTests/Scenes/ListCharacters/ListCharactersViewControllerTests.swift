@@ -10,7 +10,7 @@
 //  see http://clean-swift.com
 //
 
-//@testable import desafio_ios_joni_campos
+
 @testable import Personagens_Marvel
 import XCTest
 
@@ -51,7 +51,7 @@ class ListCharactersViewControllerTests: XCTestCase
     RunLoop.current.run(until: Date())
   }
   
-  // MARK: Test doubles
+
   
   class ListCharactersBusinessLogicSpy: ListCharactersBusinessLogic
   {
@@ -86,17 +86,27 @@ class ListCharactersViewControllerTests: XCTestCase
   {
     // Given
     
+    let oResultado: CharacterDataWrapper?
     
-    //by Joni
-//    let viewModel = ListCharacters.Something.ViewModel(oCharacters: ListCharacters.Something.Response)
-    
-    // When
-    
-    
-//    loadView()
-//    sut.displaySomething(viewModel: viewModel)
-    
-    // Then
-    //XCTAssertEqual(sut.nameTextField.text, "", "displaySomething(viewModel:) should update the name text field")
-  }
+    let url = Bundle.main.url(forResource: "characters", withExtension: "json")!
+    do {
+        let data = try Data(contentsOf: url)
+        oResultado = try! JSONDecoder().decode(CharacterDataWrapper.self, from: data)
+        
+        
+        let viewModel = ListCharacters.Something.ViewModel(oCharacters: ListCharacters.Something.Response.init(resultado: oResultado!))
+        
+        // When
+        sut.displaySomething(viewModel: viewModel)
+        
+        // Then
+       // XCTAssertEqual(sut.self, "", "displaySomething(viewModel:) should update the name text field")
+        
+        
+    } catch {
+        print(error)
+    }
+   
+
+}
 }

@@ -21,6 +21,8 @@ enum ListCharacters
   {
     struct Request
     {
+      
+        
     }
     struct Response
     {
@@ -48,17 +50,17 @@ struct CharacterDataWrapper: Decodable{
     let etag: String?
     
     
-    init(code: Int, status: String, copyright: String, attributionText: String, attributionHTML: String, data: CharacterDataContainer, etag: String){
-        
-        self.code = code
-        self.status = status
-        self.copyright = copyright
-        self.attributionText = attributionText
-        self.attributionHTML = attributionHTML
-        self.data = data
-        self.etag = etag
-        
-    }
+//    init(code: Int, status: String, copyright: String, attributionText: String, attributionHTML: String, data: CharacterDataContainer, etag: String){
+//
+//        self.code = code
+//        self.status = status
+//        self.copyright = copyright
+//        self.attributionText = attributionText
+//        self.attributionHTML = attributionHTML
+//        self.data = data
+//        self.etag = etag
+//
+//    }
     
     
     
@@ -87,13 +89,13 @@ struct CharacterDataContainer: Decodable{
     
     
     
-//    private enum CodingKeys: String, CodingKey {
-//        case offset = "offset"
-//        case limit = "limit"
-//        case total = "total"
-//        case count = "count"
-//        case characters = "results"
-//    }
+    private enum CodingKeys: String, CodingKey {
+        case offset = "offset"
+        case limit = "limit"
+        case total = "total"
+        case count = "count"
+        case characters = "results"
+    }
     
 
 }
@@ -113,19 +115,19 @@ struct Character: Decodable{
     let events: Comics?
     let series: Comics?
     
-    init( id: Int, name: String, description: String, modified: Date, resourceURI: String, urls: [URLElement], thumbnail: Thumbnail, comics: Comics, stories: Stories, events: Comics, series: Comics){
-        self.id = id
-        self.name = name
-        self.description = description
-        self.modified = modified
-        self.resourceURI = resourceURI
-        self.urls = urls
-        self.thumbnail = thumbnail
-        self.comics = comics
-        self.stories = stories
-        self.events = events
-        self.series = series
-    }
+//    init( id: Int, name: String, description: String, modified: Date, resourceURI: String, urls: [URLElement], thumbnail: Thumbnail, comics: Comics, stories: Stories, events: Comics, series: Comics){
+//        self.id = id
+//        self.name = name
+//        self.description = description
+//        self.modified = modified
+//        self.resourceURI = resourceURI
+//        self.urls = urls
+//        self.thumbnail = thumbnail
+//        self.comics = comics
+//        self.stories = stories
+//        self.events = events
+//        self.series = series
+//    }
     
     
 }
