@@ -42,7 +42,7 @@ class ListCharactersViewControllerTests: XCTestCase
   {
     let bundle = Bundle.main
     let storyboard = UIStoryboard(name: "Main", bundle: bundle)
-    sut = storyboard.instantiateViewController(withIdentifier: "ListCharactersViewController") as! ListCharactersViewController
+    sut = storyboard.instantiateViewController(withIdentifier: "ListCharactersViewController") as? ListCharactersViewController
   }
   
   func loadView()
@@ -90,17 +90,25 @@ class ListCharactersViewControllerTests: XCTestCase
     
     let url = Bundle.main.url(forResource: "characters", withExtension: "json")!
     do {
+        
+        
+        
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+        
         let data = try Data(contentsOf: url)
-        oResultado = try! JSONDecoder().decode(CharacterDataWrapper.self, from: data)
+        oResultado = try! decoder.decode(CharacterDataWrapper.self, from: data)
         
         
         let viewModel = ListCharacters.Something.ViewModel(oCharacters: ListCharacters.Something.Response.init(resultado: oResultado!))
+        
         
         // When
         sut.displaySomething(viewModel: viewModel)
         
         // Then
        // XCTAssertEqual(sut.self, "", "displaySomething(viewModel:) should update the name text field")
+        XCTAssertTrue((sut != nil).self)
         
         
     } catch {
